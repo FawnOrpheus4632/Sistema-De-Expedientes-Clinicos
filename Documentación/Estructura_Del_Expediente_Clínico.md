@@ -13,10 +13,7 @@
 -   **Consentimiento Informado:** Es obligatorio para **investigación clínica** en seres humanos o procedimientos que el psicólogo considere de alto riesgo.
 -   **Acuerdos de confidencialidad:** Se debe garantizar que todo el personal que intervenga en el tratamiento guarde **secreto profesional**, obligación que subsiste aun después de finalizar la relación con la institución.
 
-3. Información Clínica (Foco en Salud Mental)
-
-Esta sección se ajusta para recolectar la información sustantiva del proceso psicoterapéutico:
-
+3. ### Información Clínica
 -   **Historia Clínica Especializada:** El interrogatorio debe adaptarse a la "materia del psicólogo" e incluir antecedentes heredo-familiares y personales patológicos.
 -   **Consumo de Sustancias:** Se debe indagar obligatoriamente sobre el uso y dependencia del **tabaco, alcohol y otras sustancias psicoactivas**.
 -   **Estado Mental:** En casos de urgencias o internamiento psiquiátrico, la nota debe contener un resumen de la exploración del **estado mental** del paciente.
@@ -31,5 +28,5 @@ Cada sesión debe documentar el progreso terapéutico con los siguientes datos m
 -   **Sugerencias y Plan:** Indicaciones psicoterapéuticas, metas de la sesión y plan de manejo.
 -   **Autoría:** Cada nota debe incluir fecha, hora y el nombre completo con la **firma (autógrafa o electrónica)** del psicólogo para asegurar la integridad y trazabilidad del registro.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDY5MDQwMDEsMjgzOTc0ODldfQ==
+eyJoaXN0b3J5IjpbLTkwMjkzMDM1MSwyODM5NzQ4OV19
 -->
