@@ -1,19 +1,21 @@
 ### RNF - 01 Conservación de expedientes clínicos
-**Requisito:** Preservación en lugar de eliminación física de pacientes
+**Requisito:** Preservación en lugar de eliminación total de pacientes en el sistema.
 
 **Descripción:**
-El sistema deberá diseñarse para que la "eliminación" de pacientes no implique la eliminación completa de sus datos en la base de datos, sino su archivado, preservando el expediente clínico.
+El sistema deberá diseñarse para que la "eliminación" de pacientes no implique la eliminación completa de sus datos en la base de datos, por lo que será archivado, preservando el expediente clínico del paciente conservando: organizacón visual en el manejo de pacientes activos  del terapeuta y un expediente listo en caso de regreso del paciente.
 
 **Restricciones:**
 
-- No se permitirá la eliminación permanente de expedientes clínicos desde la interfaz del sistema.
-- El diseño deberá tener un atributo de estado (activo/archivado).
-- Los pacientes archivados no deberán aparecer en listados activos.
-- La información archivada no podrá ser modificada.
+- No se permitirá la eliminación permanente de expedientes clínicos desde la interfaz del sistema, este mismo solo será agregado a archivación.
+- El diseño deberá tener un atributo de estado (activo/archivado) con el fin de mantener separados los pacientes activos de los que ya fueron archivados.
+- Los pacientes archivados no deberán aparecer en listados activos, por lo que maneja una lista de pacientes activos y otra la cual será de los pacientes archivados.
+- La información archivada no podrá ser modificada, por lo que para poder sermodificada debera volver la lista de pacientes activos.
 
 **Criterios de aceptación:**
 - El sistema muestra un atributo de estado para el expediente de cada paciente.
+- el sistema maneja listas para pacientes activos y archivados.
 - El sistema impide la modificación de la información en el expediente del paciente una vez este ha sido archivado.
+- El sistema debera de permitir el cambio de estado del paciente de activo a archivado y viceversa 
 
 ---
 
