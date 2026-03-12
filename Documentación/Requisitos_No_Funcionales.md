@@ -35,6 +35,8 @@ Es de importancia mantener la confidencialidad de los expedientes para evitar el
 - Si un usuario intenta acceder a un expediente que no esté asignado a su identificador, el sistema deberá denegar el acceso.
 - Toda operación que implique tanto el acceso como la modificación de expedientes deberá validar las reglas de autorización antes de ejecutar la acción solicitada.
 
+![Esquema](/Documentación/Diagramas/BPMN%20-%20RNF%2002.jpeg)
+
 ---
 
 ### RNF - 03 Aislamiento de datos clínicos por asignación

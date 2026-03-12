@@ -11,11 +11,9 @@
     * **Fecha de nacimiento**
     * **Correo electrónico**
     * **Número telefónico**
-    * **Terapeuta asociado**(depende de la sala)
-    * **Horario**
-    * **Motivo de cancelación**(Si se cancela la cita)
-    * **Motivo de reasignación**(Si se reasigna la cita)
-
+    * **Terapeuta asociado**
+    * **Horario de la próxima cita**
+    
 2. ### Entrevista socioeconómica 
 
     Útil para evaluar la situación económica del paciente que permite a los especialistas involucrados entender su situación y saber si esta se relaciona con sus enfermedades, identificar factores que contribuyan a su estado de salud y dar una atención médica económicamente adecuada. 
