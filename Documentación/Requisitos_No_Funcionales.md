@@ -1,22 +1,4 @@
-### RNF - 01 Protección contra intentos de autenticación no autorizados
-**Requisito:** Limitación de intentos fallidos de autenticación.
-
-**Descripción:**
-El sistema deberá implementar mecanismos de protección contra intentos repetidos de validación del código OTP definido en el RF-01, con el objetivo de reducir el riesgo de ataques de fuerza bruta durante el proceso de autenticación.
-
-**Restricciones:**
-- El sistema deberá limitar el número de intentos fallidos de validación de un código OTP.
-- El sistema deberá aplicar un bloqueo temporal del proceso de autenticación tras superar el límite de intentos fallidos.
-
-**Criterios de aceptación:**
-- El sistema permite un máximo de 5 intentos fallidos de validación por cada código OTP generado.
-- Al superar el límite de intentos fallidos, el código OTP se marca como inválido o bloqueado.
-- El sistema impide nuevos intentos de autenticación durante un período mínimo de 10 minutos después de superar el límite.
-- Una vez finalizado el período de bloqueo, el usuario puede solicitar un nuevo código OTP para iniciar nuevamente el proceso de autenticación.
-
----
-
-### RNF - 02 Conservación de expedientes clínicos
+### RNF - 01 Conservación de expedientes clínicos
 **Requisito:** Preservación en lugar de eliminación física de pacientes
 
 **Descripción:**
@@ -35,7 +17,7 @@ El sistema deberá diseñarse para que la "eliminación" de pacientes no impliqu
 
 ---
 
-### RNF - 03 Aplicación obligatoria de políticas de autorización
+### RNF - 02 Aplicación obligatoria de políticas de autorización
 
 **Requisito:** Aplicación de controles de autorización en el backend.
 
@@ -54,7 +36,7 @@ El sistema deberá implementar controles de autorización en el backend para gar
 - Las restricciones de acceso se aplican incluso si el usuario intenta acceder directamente a una ruta mediante URL.
 ---
 
-### RNF - 04 Aislamiento de datos clínicos por asignación
+### RNF - 03 Aislamiento de datos clínicos por asignación
 
 **Requisito:** Aislamiento de información clínica entre terapeutas.
 
@@ -73,7 +55,7 @@ El sistema deberá garantizar el aislamiento de los expedientes clínicos median
 
 ---
 
-### RNF - 05 Menú dinámico basado en el rol del usuario
+### RNF - 04 Menú dinámico basado en el rol del usuario
 
 **Requisito:** Menú dinámico basado en el rol del usuario
 

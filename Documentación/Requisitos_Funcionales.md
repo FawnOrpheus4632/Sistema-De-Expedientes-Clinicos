@@ -98,6 +98,25 @@ El sistema deberá proporcionar un menú de navegación para acceder a las difer
 **Criterios de aceptación:**
 - El usuario puede navegar entre las funcionalidades del sistema.
 - El menú muestra únicamente opciones disponibles para el rol del usuario.
+
+---
+
+### RF - 07 Registro de expediente clínico:
+
+**Requisito:** Registro de los expedientes clínicos
+
+**Descripción:** 
+El sistema deberá permitir el registro y almacenaje de expedientes por paciente siguiendo las normativas y leyes pertinentes.
+
+**Restricciones:**
+- Cada paciente registrado deberá contar un expediente.
+- Solo los terapeutas autorizados podrán acceder a la información clínica respectiva.
+- El expediente deberá contar con los campos señalados por las normativas y leyes pertinentes.
+
+**Criterios de aceptación:**
+- El sistema crea un expediente por paciente.
+- El expediente cuenta con la información clínica requerida
+- El expediente solo puede ser consultado por el terapeuta asignado.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTIyNzk1OTg4NF19
 -->
