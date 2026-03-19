@@ -212,3 +212,69 @@ El supervisor rechaza un reporte y registra comentarios.
 
 ### RF relacionados:
 - RF-08
+
+---
+## Actor: Administrador
+
+### CU-10: Registrar expediente clínico
+
+### Descripción:
+Permite al administrador crear el expediente clínico asociado a un paciente registrado en el sistema.
+
+### Flujo principal:
+1. El administrador accede al módulo de expedientes clínicos.
+2. El administrador selecciona la opción crear expediente clínico.
+3. El sistema solicita el identificador del paciente.
+4. El administrador ingresa la información requerida.
+5. El sistema valida que el paciente exista en el sistema.
+6. El sistema crea el expediente clínico asociado al paciente.
+7. El sistema confirma que el expediente fue registrado correctamente.
+### Postcondiciones: 
+- El paciente queda asociado a un expediente clínico dentro del sistema
+
+### RF relacionados:
+- RF-09
+---
+### CU-11: Registrar entrevista socioeconómica
+
+### Descripción:
+Permite al administrador registrar la información correspondiente a la entrevista socioeconómica de un paciente
+
+### Flujo principal:
+1. El administrador accede al expediente clínico del paciente
+2. El administrador selecciona la opcíon registrar entrevista socioeconómica
+3. El sistema muestra el formlario correspondiente
+4. El administrador captura la información de la entrevista
+5. El administrador guarda la informacion
+6. El sistema almacena los datos en el eexpediente clínico del paciente
+
+### Postcondiciones:
+- La informacion de la entrevista socioeconómica queda almacenada en el expediente del paciente
+
+### RF relacionados:
+- RF-10
+---
+### CU-12: Registrar consentimiento informado
+
+### Descripción:
+Permite al administrador regisrar la información correspondiente al acuerdo de consentimiento firmado por el paciente
+
+### Flujo principal:
+1. El administardor accede al expediente clínico del paciente
+2. El administrador selecciona la opción registrar consentimiento informado
+3. El sistema muestra el formulario de registro
+4. El administradorcaptura la información del documento firmado
+5. EL administador guarda la información
+6. El sistema almacena el documento dentro del expediente clínico del paciente
+
+### Postcondiciones:
+El consentimiento informado queda registrado en el expediente clínico del paciente
+
+### RF relacionados:
+- RF-11
+
+
+
+
+
+
