@@ -59,3 +59,83 @@ El sistema deberá garantizar el aislamiento de los expedientes clínicos median
 - Las reglas de aislamiento de datos se aplican tanto en operaciones de lectura como de modificación.
 
 ---
+
+### RNF - 04 Registro de eventos de auditoría en expedientes clínicos
+
+**Descripción:**
+El sistema deberá registrar, mediante un mecanismo en backend, todos los eventos sensibles relacionados con el acceso y gestión de expedientes clínicos y sus reportes asociados, con el fin de garantizar la trazabilidad de las acciones realizadas por los usuarios y detectar accesos no permitidos.
+
+**Restricciones:**
+
+- La auditoría deberá ejecutarse exclusivamente en backend.
+- Los eventos auditables incluyen: consulta de expediente clínico, acceso denegado a expediente clínico, registro de entrevista socioeconómica, registro de informe de consentimiento, registro de reporte de sesión, modificación de reporte de sesión, envío de reporte de sesión para revisión, aprobación o rechazo de reporte de sesión.
+- La fecha y hora del evento deberá registrarse en formato ISO 8601.
+- El campo “resultado” deberá utilizar valores controlados: {EXITO, DENEGADO}.
+
+**Criterios de aceptación:**
+
+- Cada evento definido genera automáticamente un registro de auditoría.
+- Se registran tanto accesos permitidos como denegados.
+- No existen acciones auditables que se ejecuten sin generar un registro.
+- El registro se realiza sin intervención del usuario.
+
+--- 
+
+### RNF-05 Estructura de los registros de auditoría
+
+**Descripción:**  
+El sistema deberá registrar los eventos de auditoría utilizando una estructura de datos estandarizada que permita identificar claramente las acciones realizadas, garantizando la integridad e inmutabilidad de los registros.
+
+**Restricciones:**
+
+- Cada registro debe incluir: id del usuario, rol del usuario, fecha y hora, acción realizada, recurso afectado, id del recurso y resultado de la operación.
+- Los registros deberán almacenarse en formato estructurado.
+- No se permitirá la modificación o eliminación de logs desde la interfaz del sistema.
+- Los registros deben ser persistentes.
+- Solo se permitirán operaciones de inserción sobre los logs.
+
+**Criterios de aceptación:**
+
+- Todos los registros contienen los campos definidos.
+- No se almacenan registros incompletos.
+- No existe funcionalidad para editar o eliminar logs desde el sistema.
+- Los registros permanecen íntegros tras reinicios o actualizaciones.
+
+--- 
+
+### RNF-06 Auditoría de accesos a expedientes
+
+**Descripción:**  
+El sistema deberá registrar todos los intentos de acceso a expedientes clínicos, tanto exitosos como denegados, con el objetivo de mantener control sobre el acceso a información sensible.
+
+**Restricciones:**
+
+- Todo acceso debe generar un registro.
+- Se debe registrar explícitamente el resultado de la operación.
+- No se deben omitir intentos fallidos.
+- No se deben almacenar datos clínicos sensibles completos dentro de los logs.
+
+**Criterios de aceptación:**
+
+- Se registra cada consulta de expediente clínico.
+- Se registra cada intento de acceso denegado.
+- Cada registro incluye usuario, rol, fecha y hora, acción, id del expediente y resultado.
+- Los registros son accesibles para auditoría por usuarios autorizados.
+
+--- 
+
+### RNF-07 Trazabilidad de operaciones sobre reportes clínicos
+
+**Descripción:**  
+El sistema deberá registrar todas las operaciones realizadas sobre los reportes clínicos contenidos en los expedientes, permitiendo rastrear su ciclo de vida desde su creación hasta su aprobación o rechazo.
+
+**Restricciones:**
+
+- Todas las operaciones sobre reportes deben generar un registro.
+- Los registros deben asociarse a un identificador único de reporte.
+- El historial debe mantenerse íntegro y persistente.
+
+**Criterios de aceptación:**
+
+- Se registran los eventos de registro, modificación, envío para revisión y aprobación o rechazo de reportes.
+- Cada registro incluye usuario, rol, fecha y hora, acción, id del reporte y resultado.
