@@ -3,7 +3,7 @@
 ### Usuario
 | Nombre        | Tipo de dato  | Descripción   | Restricciones |
 | ------------- |:-------------:| ------------- |:-------------:|
-| id            | Long          | Número único para identificar al individuo| Único. 19 dígitos máximos y Debe existir        |
+| idUsuario     | Long          | Número único para identificar al individuo| Único. 19 dígitos máximos y Debe existir        |
 | nombreCompleto| String        | Primer nombre, segundo nombre (si tiene), apellido paterno y apellido materno del usuario    | Solo letras, un máximo de 100 letras y Debe existir    |
 
 ### Paciente
@@ -39,7 +39,7 @@ Hereda de: Usuario
 ### Documento
 | Nombre        | Tipo de dato  | Descripción   | Restricciones |
 | ------------- |:-------------:| ------------- |:-------------:|
-| id            | Long          | Número único de identificación por documento| Único. 19 dígitos máximos y Debe existir |
+| idDocumento   | Long          | Número único de identificación por documento| Único. 19 dígitos máximos y Debe existir |
 | fecha         | Date          | Fecha para identificar última modificación  | Fecha no mayor a la fecha actual, tampoco menor a la fecha de creación del documento y Debe existir|
 
 ### Expediente
